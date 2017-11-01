@@ -62,10 +62,11 @@ angular.module('videosharing-embed').factory('RegisteredPlayers', [ 'PlayerConfi
                 autoplay: 0,
                 loop: 0,
                 api: 0,
+								background: 0,
                 player_id: ''
             },
             whitelist: ['autoplay', 'autopause', 'badge', 'byline', 'color', 'portrait', 'loop', 'api',
-                'playerId', 'title'],
+                'playerId', 'title', 'background'],
             transformAttrMap: { 'playerId' : 'player_id'},
             processSettings : function(settings, videoID) {
                 return settings;
